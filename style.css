@@ -94,4 +94,37 @@ text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 margin-top:20px;
+}.teams{
+padding:60px 20px;
+background:#081c3b;
+}
+
+.teams h2{
+color:#FFD700;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.team-card{
+background:#102b57;
+padding:20px;
+margin:20px auto;
+max-width:400px;
+border-radius:12px;
+border:2px solid #FFD700;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.team-card:hover{
+transform:scale(1.03);
+}
+
+.team-card h3{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+.team-card p{
+color:#ffffff;
 }
