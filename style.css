@@ -196,3 +196,67 @@ color:#fff;
 tr:hover{
 background:#173b72;
 }
+.gallery{
+padding:60px 20px;
+background:#0d2b57;
+text-align:center;
+}
+
+.gallery h2{
+color:#FFD700;
+margin-bottom:30px;
+}
+
+.gallery-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.gallery-grid img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+border:3px solid #FFD700;
+}
+
+.contact{
+padding:60px 20px;
+background:#071a35;
+text-align:center;
+}
+
+.contact h2{
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+.contact a{
+display:inline-block;
+margin-top:20px;
+background:#FFD700;
+color:#000;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+footer{
+background:#000814;
+padding:25px;
+text-align:center;
+color:#fff;
+margin-top:20px;
+}
+
+footer h3{
+color:#FFD700;
+}
