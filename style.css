@@ -128,3 +128,34 @@ margin-bottom:10px;
 .team-card p{
 color:#ffffff;
 }
+.schedule{
+padding:60px 20px;
+background:#0d2b57;
+text-align:center;
+}
+
+.schedule h2{
+color:#FFD700;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.match-card{
+background:#132f5d;
+border:2px solid #FFD700;
+border-radius:12px;
+padding:20px;
+margin:20px auto;
+max-width:420px;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.match-card h3{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+.match-card p{
+color:#fff;
+margin:8px 0;
+}
