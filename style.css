@@ -260,3 +260,47 @@ margin-top:20px;
 footer h3{
 color:#FFD700;
 }
+.awards,
+.news{
+padding:60px 20px;
+background:#0b1f3a;
+text-align:center;
+}
+
+.awards h2,
+.news h2{
+color:#FFD700;
+margin-bottom:30px;
+}
+
+.award-card,
+.news-card{
+max-width:500px;
+margin:20px auto;
+padding:20px;
+background:#102b57;
+border:2px solid #FFD700;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.award-card h3,
+.news-card h3{
+color:#FFD700;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+button,
+.btn,
+.contact a{
+transition:.3s;
+}
+
+button:hover,
+.btn:hover,
+.contact a:hover{
+transform:scale(1.05);
+}
