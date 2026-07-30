@@ -25,6 +25,10 @@ onValue(liveRef, (snapshot) => {
   document.getElementById("score").innerText = data.score;
   document.getElementById("target").innerText = data.target;
   document.getElementById("status").innerText = data.status;
+document.getElementById("batsman1").innerText = data.batsman1 || "-";
+document.getElementById("batsman2").innerText = data.batsman2 || "-";
+document.getElementById("bowler").innerText = data.bowler || "-";
+document.getElementById("last6").innerText = data.last6 || "-";
 });
 const scoreText = data.score;
 
