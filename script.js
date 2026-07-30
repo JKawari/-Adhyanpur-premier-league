@@ -25,3 +25,18 @@ onValue(liveRef, (snapshot) => {
   document.getElementById("target").innerText = "Target: " + data.target;
   document.getElementById("status").innerText = "Status: " + data.status;
 });
+import { ref, onValue } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+
+const liveRef = ref(db, "liveMatch");
+
+onValue(liveRef, (snapshot) => {
+  const data = snapshot.val();
+
+  if (!data) return;
+
+  document.getElementById("matchTitle").textContent = data.matchTitle;
+  document.getElementById("team1").textContent = data.team1;
+  document.getElementById("score").textContent = data.score;
+  document.getElementById("target").textContent = data.target;
+  document.getElementById("status").textContent = data.status;
+});
