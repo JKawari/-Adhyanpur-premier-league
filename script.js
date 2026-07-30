@@ -1,5 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+import {
+  getDatabase,
+  ref,
+  onValue
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDNGxfpKZDS5HB86pBRTvz93JLGfiA92yk",
@@ -14,4 +18,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-console.log("Firebase Connected Successfully");
+const liveRef = ref(db, "liveMatch");
+
+onValue(liveRef, (snapshot) => {
+  const data = snapshot.val();
+
+  if (!data) return;
+
+  document.getElementById("matchTitle").innerText = data.matchTitle;
+  document.getElementById("team1").innerText = data.team1;
+  document.getElementById("score").innerText = data.score;
+  document.getElementById("target").innerText = data.target;
+  document.getElementById("status").innerText = data.status;
+});
