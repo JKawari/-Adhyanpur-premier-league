@@ -304,3 +304,19 @@ button:hover,
 .contact a:hover{
 transform:scale(1.05);
 }
+.live-badge{
+    background:red;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    margin-left:10px;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.3;}
+    100%{opacity:1;}
+}
