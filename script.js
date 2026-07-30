@@ -26,3 +26,16 @@ onValue(liveRef, (snapshot) => {
   document.getElementById("target").innerText = data.target;
   document.getElementById("status").innerText = data.status;
 });
+const scoreText = data.score;
+
+const runs = parseInt(scoreText.split("/")[0]);
+
+const oversText = scoreText.match(/\((.*?)\)/)?.[1] || "0.0";
+
+const overs = parseFloat(oversText);
+
+if (overs > 0) {
+  document.getElementById("runRate").innerText = (runs / overs).toFixed(2);
+} else {
+  document.getElementById("runRate").innerText = "0.00";
+}
