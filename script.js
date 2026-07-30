@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to Adhyanpur Premier League!");
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
 
-  const cards = document.querySelectorAll(
-    ".team-card, .match-card, .award-card, .news-card"
-  );
+const firebaseConfig = {
+  apiKey: "AIzaSyDNGxfpKZDS5HB86pBRTvz93JLGfiA92yk",
+  authDomain: "apl-official.firebaseapp.com",
+  databaseURL: "https://apl-official-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "apl-official",
+  storageBucket: "apl-official.firebasestorage.app",
+  messagingSenderId: "941642140634",
+  appId: "1:941642140634:web:d25f183cb1523fa6960ee3"
+};
 
-  cards.forEach(card => {
-    card.addEventListener("click", () => {
-      card.style.transform = "scale(1.03)";
-      setTimeout(() => {
-        card.style.transform = "scale(1)";
-      }, 200);
-    });
-  });
-});
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+console.log("Firebase Connected Successfully");
