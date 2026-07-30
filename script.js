@@ -20,8 +20,9 @@ onValue(liveRef, (snapshot) => {
   const data = snapshot.val();
   if (!data) return;
 
-document.getElementById("matchTitle").innerText = data.matchTitle;
-document.getElementById("team1").innerText = data.team1;
-document.getElementById("score").innerText = data.score;
-document.getElementById("target").innerText = data.target;
-document.getElementById("status").innerText = data.status;
+  document.getElementById("matchTitle").innerText = data.matchTitle;
+  document.getElementById("team1").innerText = data.team1;
+  document.getElementById("score").innerText = data.score;
+  document.getElementById("target").innerText = data.target;
+  document.getElementById("status").innerText = data.status;
+});
